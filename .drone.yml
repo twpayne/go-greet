@@ -3,4 +3,7 @@ pipeline:
     image: golang
     commands:
       - go build
+  test:
+    image: golang
+    commands:
       - go test
