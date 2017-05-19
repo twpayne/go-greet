@@ -1,9 +1,9 @@
+workspace:
+  base: /go
+  path: src/github.com/twpayne/go-greet
 pipeline:
   build:
     image: centralway/bazel:0.4.5
     commands:
       - bazel build //...
-  test:
-    image: centralway/bazel:0.4.5
-    commands:
       - bazel test //...
