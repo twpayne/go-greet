@@ -1,9 +1,9 @@
 pipeline:
   build:
-    image: golang
+    image: centralway/bazel:0.4.5
     commands:
-      - go build
+      - bazel build //...
   test:
-    image: golang
+    image: centralway/bazel:0.4.5
     commands:
-      - go test
+      - bazel test //...
